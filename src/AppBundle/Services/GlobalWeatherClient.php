@@ -22,7 +22,7 @@ class GlobalWeatherClient
 	 *
 	 * @return mixed
 	 */
-	public function getWeather($options = array())
+	public function getWeather( $options = [ ] )
 	{
 		$client = $this->getClient();
 		$response = $client->getWeather($options);
@@ -35,7 +35,7 @@ class GlobalWeatherClient
 	 *
 	 * @return mixed
 	 */
-	public function getCitiesByCountry($options = array())
+	public function getCitiesByCountry( $options = [ ] )
 	{
 		$client = $this->getClient();
 		$response = $client->getCitiesByCountry($options);

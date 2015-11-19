@@ -14,8 +14,8 @@ class GlobalWeatherClientTest extends \PHPUnit_Framework_TestCase
 	{
 		$weather_client = new GlobalWeatherClient();
 		$response = $weather_client->getWeather([
-			'CityName'	=> 'New York',
-			'CountryName'	=>	'United States'
+			'CityName'    => 'New York',
+			'CountryName' => 'United States'
 		]);
 
 		$this->assertTrue(substr($response->GetWeatherResult, 0, 5) == '<?xml');
